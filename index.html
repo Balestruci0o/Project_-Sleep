@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SleepWise - Sleep Smarter, Feel Better | Teen Sleep Health</title>
+  <meta name="description" content="Discover why sleep matters for teens. Learn science-backed tips, use our sleep calculator, and take the quiz. Improve your sleep in just 7 days!">
+  <meta name="keywords" content="teen sleep, sleep tips, sleep calculator, sleep health, adolescent sleep, better sleep, sleep hygiene">
+  <meta name="author" content="SleepWise">
+  <meta property="og:title" content="SleepWise - Sleep Smarter, Feel Better">
+  <meta property="og:description" content="Helping teens understand and improve their sleep habits with science-backed tips and interactive tools.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SleepWise - Teen Sleep Health">
+  <meta name="twitter:description" content="Sleep smarter, feel better. Your brain deserves a good night's rest.">
+  <link rel="canonical" href="https://sleepwise.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <span>SleepWise</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#why-sleep">Why Sleep?</a></li>
+        <li><a href="#problems">The Problem</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <a href="#home" class="nav-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <span>SleepWise</span>
+      </a>
+      <button class="mobile-menu-btn" id="mobile-menu-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-menu-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#why-sleep">Why Sleep?</a></li>
+      <li><a href="#problems">The Problem</a></li>
+      <li><a href="#tips">Tips</a></li>
+      <li><a href="#calculator">Calculator</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="stars-container" id="stars-container"></div>
+    
+    <!-- Floating Clouds -->
+    <svg class="cloud" style="top: 8rem; left: 2.5rem; width: 6rem; height: 6rem; animation-delay: 0s;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+    <svg class="cloud" style="top: 12rem; right: 5rem; width: 8rem; height: 8rem; animation-delay: 1s;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+    <svg class="cloud" style="bottom: 10rem; left: 25%; width: 5rem; height: 5rem; animation-delay: 2s;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+
+    <div class="hero-content">
+      <div class="hero-moon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </div>
+      <h1>Sleep Smarter, <span class="text-gradient">Feel Better</span></h1>
+      <p class="hero-slogan">Because your brain deserves a good night's rest.</p>
+      <p class="hero-intro">Discover why sleep is your secret superpower for better grades, happier moods, and a healthier you. Ready to transform your nights?</p>
+      <a href="#tips" class="btn btn-hero">Start Improving Your Sleep</a>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-inner">
+        <div class="scroll-indicator-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Sleep Matters -->
+  <section id="why-sleep" class="why-sleep">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Why Sleep <span class="text-gradient">Matters</span></h2>
+        <p>Sleep isn't just "rest time" – it's when your body and brain do their most important work.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+          </div>
+          <h3>Better Focus & Memory</h3>
+          <p>Sleep helps your brain process and store information, making studying more effective.</p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3>Stable Mood</h3>
+          <p>Well-rested teens handle stress better and experience fewer mood swings.</p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+          </div>
+          <h3>Stronger Immune System</h3>
+          <p>Quality sleep boosts your body's defense against illnesses and infections.</p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
+          <h3>Healthy Growth</h3>
+          <p>Growth hormones are released during deep sleep, essential for your development.</p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
+          </div>
+          <h3>Better Grades</h3>
+          <p>Students who sleep well consistently perform better academically.</p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+          </div>
+          <h3>More Energy</h3>
+          <p>Wake up refreshed and ready to tackle your day with enthusiasm.</p>
+        </div>
+      </div>
+
+      <div class="sleep-hours-box reveal">
+        <p class="number">8-10</p>
+        <p class="label">hours of sleep per night</p>
+        <p class="description">That's what teens need for optimal health and performance. Your brain is still developing, and sleep is crucial for that process.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teen Sleep Problem -->
+  <section id="problems" class="teen-problem">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-destructive">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+          The Problem
+        </span>
+        <h2>The Teen <span class="text-gradient">Sleep Crisis</span></h2>
+        <p>Modern life is making it harder than ever for teens to get quality sleep. Here's what's happening.</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(0 84% 60%);"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <p class="value" style="color: hsl(0 84% 60%);">73%</p>
+          <p class="label">of teens sleep less than 7 hours</p>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(280 40% 60%);"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          </div>
+          <p class="value" style="color: hsl(280 40% 60%);">90%</p>
+          <p class="label">use screens before bed</p>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(190 60% 75%);"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </div>
+          <p class="value" style="color: hsl(190 60% 75%);">2hrs</p>
+          <p class="label">blue light delays melatonin release</p>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(45 93% 70%);"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>
+          </div>
+          <p class="value" style="color: hsl(45 93% 70%);">68%</p>
+          <p class="label">consume caffeine after 3 PM</p>
+        </div>
+      </div>
+
+      <div class="problems-box reveal">
+        <h3>What's Disrupting Your Sleep?</h3>
+        <div class="problems-list">
+          <div class="problem-item">
+            <div class="problem-number">1</div>
+            <p>Blue light from screens suppresses melatonin production</p>
+          </div>
+          <div class="problem-item">
+            <div class="problem-number">2</div>
+            <p>Late-night studying creates stress and anxiety</p>
+          </div>
+          <div class="problem-item">
+            <div class="problem-number">3</div>
+            <p>Social media causes overstimulation before sleep</p>
+          </div>
+          <div class="problem-item">
+            <div class="problem-number">4</div>
+            <p>Irregular sleep schedules confuse your body clock</p>
+          </div>
+          <div class="problem-item">
+            <div class="problem-number">5</div>
+            <p>Energy drinks and caffeine disrupt natural sleep patterns</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Mistakes -->
+  <section id="mistakes" class="common-mistakes">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Common <span class="text-gradient">Mistakes</span></h2>
+        <p>Are you making these sleep mistakes? Don't worry – they're easy to fix once you know about them.</p>
+      </div>
+
+      <div class="mistakes-grid">
+        <div class="mistake-card reveal">
+          <div class="mistake-x">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </div>
+          <div class="mistake-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          </div>
+          <h3>Scrolling Before Bed</h3>
+          <p>The blue light and stimulating content keep your brain wired when it should be winding down.</p>
+        </div>
+
+        <div class="mistake-card reveal">
+          <div class="mistake-x">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </div>
+          <div class="mistake-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Afternoon Energy Drinks</h3>
+          <p>Caffeine stays in your system for 6+ hours, making it harder to fall asleep naturally.</p>
+        </div>
+
+        <div class="mistake-card reveal">
+          <div class="mistake-x">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </div>
+          <div class="mistake-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Irregular Sleep Schedule</h3>
+          <p>Sleeping in on weekends throws off your body's internal clock all week long.</p>
+        </div>
+
+        <div class="mistake-card reveal">
+          <div class="mistake-x">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </div>
+          <div class="mistake-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </div>
+          <h3>No Bedtime Routine</h3>
+          <p>Without a wind-down routine, your brain doesn't know it's time to prepare for sleep.</p>
+        </div>
+
+        <div class="mistake-card reveal">
+          <div class="mistake-x">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </div>
+          <div class="mistake-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
+          </div>
+          <h3>Studying in Bed</h3>
+          <p>Your brain starts associating your bed with work instead of rest and relaxation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="tips" class="recommendations">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-cyan">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+          Solutions
+        </span>
+        <h2>5 Ways to <span class="text-gradient">Sleep Better</span></h2>
+        <p>Simple, science-backed strategies that actually work. Start with one and build from there!</p>
+      </div>
+
+      <div class="tips-list">
+        <div class="tip-card reveal">
+          <div class="tip-icon cyan">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="tip-content">
+            <div class="tip-header">
+              <span class="tip-number">01</span>
+              <h3>Create a Consistent Schedule</h3>
+            </div>
+            <p>Go to bed and wake up at the same time every day – yes, even on weekends! Your body loves routine, and a consistent schedule helps regulate your internal clock.</p>
+          </div>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/><path d="m22 17-10-5-10 5"/></svg>
+          </div>
+          <div class="tip-content">
+            <div class="tip-header">
+              <span class="tip-number">02</span>
+              <h3>Screen-Free Hour Before Bed</h3>
+            </div>
+            <p>Put away phones, tablets, and laptops at least 60 minutes before sleep. Use this time for reading, stretching, or journaling instead.</p>
+          </div>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-icon midnight">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </div>
+          <div class="tip-content">
+            <div class="tip-header">
+              <span class="tip-number">03</span>
+              <h3>Optimize Your Sleep Space</h3>
+            </div>
+            <p>Make your room dark, cool (around 65-68°F), and quiet. Consider blackout curtains, a fan for white noise, or an eye mask.</p>
+          </div>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-icon cyan">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg>
+          </div>
+          <div class="tip-content">
+            <div class="tip-header">
+              <span class="tip-number">04</span>
+              <h3>Exercise Earlier in the Day</h3>
+            </div>
+            <p>Regular physical activity improves sleep quality, but do it at least 3-4 hours before bedtime. Evening exercise can be too stimulating.</p>
+          </div>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-icon star">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>
+          </div>
+          <div class="tip-content">
+            <div class="tip-header">
+              <span class="tip-number">05</span>
+              <h3>Limit Caffeine After 3 PM</h3>
+            </div>
+            <p>Caffeine has a half-life of 5-6 hours. That afternoon coffee or energy drink could still be affecting you at midnight!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sleep Calculator -->
+  <section id="calculator" class="calculator">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-cyan">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+          Interactive Tool
+        </span>
+        <h2>Sleep <span class="text-gradient">Calculator</span></h2>
+        <p>Find your perfect bedtime based on 90-minute sleep cycles. Wake up feeling refreshed, not groggy!</p>
+      </div>
+
+      <div class="calculator-box reveal">
+        <label class="calculator-label">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          What time do you need to wake up?
+        </label>
+        <input type="time" id="wake-time" class="calculator-input" value="07:00">
+        <button id="calculate-btn" class="btn btn-hero" style="width: 100%;">Calculate My Bedtime</button>
+        <div id="calculator-results" class="calculator-results" style="display: none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz" class="quiz">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-cyan">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+          Test Yourself
+        </span>
+        <h2>Sleep Habits <span class="text-gradient">Quiz</span></h2>
+        <p>Find out how your sleep habits stack up! Answer these 5 questions to get personalized feedback.</p>
+      </div>
+
+      <div class="quiz-box reveal" id="quiz-container"></div>
+    </div>
+  </section>
+
+  <!-- Sleep Plan -->
+  <section class="sleep-plan">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge badge-cyan">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          Free Download
+        </span>
+        <h2>7-Day Sleep <span class="text-gradient">Challenge</span></h2>
+        <p>Transform your sleep habits in just one week! Download our free printable challenge.</p>
+      </div>
+
+      <div class="reveal" style="max-width: 900px; margin: 0 auto; background: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-bottom: 2rem;">
+        <div class="challenge-grid">
+          <div class="challenge-card">
+            <div class="challenge-day">1</div>
+            <div>
+              <h4>Set a consistent bedtime and wake time</h4>
+              <p>Choose times that give you 8-9 hours of sleep</p>
+            </div>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-day">2</div>
+            <div>
+              <h4>Create a screen-free hour before bed</h4>
+              <p>Read, journal, or listen to calm music instead</p>
+            </div>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-day">3</div>
+            <div>
+              <h4>Optimize your sleep environment</h4>
+              <p>Dark, cool, and quiet is the goal</p>
+            </div>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-day">4</div>
+            <div>
+              <h4>No caffeine after 3 PM</h4>
+              <p>Switch to water or herbal tea in the afternoon</p>
+            </div>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-day">5</div>
+            <div>
+              <h4>Add 15 minutes of morning sunlight</h4>
+              <p>This helps regulate your body clock</p>
+            </div>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-day">6</div>
+            <div>
+              <h4>Create a relaxing bedtime routine</h4>
+              <p>Same activities every night signal sleep time</p>
+            </div>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-day">7</div>
+            <div>
+              <h4>Reflect on your week and plan ahead</h4>
+              <p>Keep what worked, adjust what didn't</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan-download-section reveal">
+        <button id="download-plan" class="btn btn-glow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          Download Free Challenge
+        </button>
+        <p class="plan-download-note">Printable PDF • Track your progress • Share with friends</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content reveal">
+        <span class="badge badge-cyan">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          About This Campaign
+        </span>
+        <h2>Why We <span class="text-gradient">Care</span></h2>
+        <p>The SleepWise campaign was created to address the growing sleep crisis among teenagers. In a world of constant connectivity, late-night studying, and social media, quality sleep has become harder than ever to achieve. We believe every teen deserves to know how crucial sleep is for their health, happiness, and success.</p>
+        <p>Our mission is simple: empower you with the knowledge and tools to take control of your sleep. Small changes can lead to big improvements in how you feel, learn, and live.</p>
+
+        <div class="about-buttons">
+          <button id="share-btn" class="btn btn-hero">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+            Share with Friends
+          </button>
+          <button class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Join the Movement
+          </button>
+        </div>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <p class="value cyan">10K+</p>
+            <p class="label">Teens Helped</p>
+          </div>
+          <div class="about-stat">
+            <p class="value purple">50+</p>
+            <p class="label">Schools Reached</p>
+          </div>
+          <div class="about-stat">
+            <p class="value star">95%</p>
+            <p class="label">Report Better Sleep</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            <span>SleepWise</span>
+          </a>
+          <p>Helping teens sleep smarter since 2024. Your brain deserves a good night's rest.</p>
+          <a href="mailto:hello@sleepwise.com" class="footer-email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            hello@sleepwise.com
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#why-sleep">Why Sleep?</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#sources">Sources</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Scientific Sources</h4>
+          <ul>
+            <li>
+              <a href="https://www.sleepfoundation.org" target="_blank" rel="noopener noreferrer">
+                National Sleep Foundation
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.cdc.gov/sleep" target="_blank" rel="noopener noreferrer">
+                CDC Sleep Guidelines
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.aap.org" target="_blank" rel="noopener noreferrer">
+                American Academy of Pediatrics
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 SleepWise. Made with 💜 for teens everywhere.</p>
+        <p>Remember: 8-10 hours of sleep = a better you!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
