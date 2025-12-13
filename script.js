@@ -223,101 +223,19 @@ renderQuiz();
 
 // Download Sleep Plan
 const downloadBtn = document.getElementById('download-plan');
+
 downloadBtn.addEventListener('click', () => {
-  const content = `
-╔══════════════════════════════════════════════════════════════╗
-║           7-DAY SLEEP IMPROVEMENT CHALLENGE                  ║
-║                     Sleep Smarter, Feel Better               ║
-╚══════════════════════════════════════════════════════════════╝
-
-Your journey to better sleep starts now! Complete one task each day.
-
-DAY 1
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Task: Set a consistent bedtime and wake time
-    Tip: Choose times that give you 8-9 hours of sleep
-    Notes: ___________________________________________________
-
-DAY 2
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Task: Create a screen-free hour before bed
-    Tip: Read, journal, or listen to calm music instead
-    Notes: ___________________________________________________
-
-DAY 3
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Task: Optimize your sleep environment
-    Tip: Dark, cool, and quiet is the goal
-    Notes: ___________________________________________________
-
-DAY 4
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Task: No caffeine after 3 PM
-    Tip: Switch to water or herbal tea in the afternoon
-    Notes: ___________________________________________________
-
-DAY 5
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Task: Add 15 minutes of morning sunlight
-    Tip: This helps regulate your body clock
-    Notes: ___________________________________________________
-
-DAY 6
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Task: Create a relaxing bedtime routine
-    Tip: Same activities every night signal sleep time
-    Notes: ___________________________________________________
-
-DAY 7
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[ ] Task: Reflect on your week and plan ahead
-    Tip: Keep what worked, adjust what didn't
-    Notes: ___________________________________________________
-
-═══════════════════════════════════════════════════════════════
-DAILY SLEEP LOG
-═══════════════════════════════════════════════════════════════
-
-Day 1: Bedtime: _____ Wake time: _____ Hours: _____ Rating: /10
-Day 2: Bedtime: _____ Wake time: _____ Hours: _____ Rating: /10
-Day 3: Bedtime: _____ Wake time: _____ Hours: _____ Rating: /10
-Day 4: Bedtime: _____ Wake time: _____ Hours: _____ Rating: /10
-Day 5: Bedtime: _____ Wake time: _____ Hours: _____ Rating: /10
-Day 6: Bedtime: _____ Wake time: _____ Hours: _____ Rating: /10
-Day 7: Bedtime: _____ Wake time: _____ Hours: _____ Rating: /10
-
-═══════════════════════════════════════════════════════════════
-REFLECTION
-═══════════════════════════════════════════════════════════════
-
-What worked well this week?
-_______________________________________________________________
-_______________________________________________________________
-
-What was challenging?
-_______________________________________________________________
-_______________________________________________________________
-
-My sleep goal for next week:
-_______________________________________________________________
-
-═══════════════════════════════════════════════════════════════
-Remember: Teens need 8-10 hours of sleep each night!
-
-Visit sleepwise.com for more tips and tools.
-Share your progress with #SleepWiseChallenge
-═══════════════════════════════════════════════════════════════
-  `.trim();
-  
-  const blob = new Blob([content], { type: 'text/plain' });
-  const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  a.href = url;
-  a.download = '7-Day-Sleep-Challenge.txt';
+
+  // cesta k PDF súboru (v tom istom adresári alebo podadresári)
+  a.href = '7_day_sleep_improvement_challenge.pdf';
+
+  // názov súboru po stiahnutí
+  a.download = '7_day_sleep_improvement_challenge.pdf';
+
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
-  URL.revokeObjectURL(url);
 });
 
 // Share functionality
